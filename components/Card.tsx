@@ -17,7 +17,6 @@ export default function Card({ image, title, location, price }: Props) {
       transition duration-300 cursor-pointer group
     "
     >
-      {/* IMAGE */}
       <img
         src={image}
         alt={title}
@@ -27,21 +26,16 @@ export default function Card({ image, title, location, price }: Props) {
         "
       />
 
-      {/* TITLE */}
       <h3 className="font-semibold text-sm line-clamp-2 group-hover:text-blue-600 transition">
         {title}
       </h3>
 
-      {/* RATING */}
       <div className="text-orange-400 text-sm mb-1">★★★★☆</div>
 
-      {/* LOCATION */}
       <p className="text-gray-500 text-sm">{location}</p>
 
-      {/* PRICE */}
       <p className="text-red-500 font-bold mt-2">{price}</p>
 
-      {/* NOTE */}
       <p className="text-gray-400 text-xs">Belum termasuk pajak</p>
     </div>
   );

@@ -33,14 +33,13 @@ export default function Navbar() {
         ${show ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"}
       `}
     >
-      {/* LOGO */}
+      
       <h1 className="text-2xl font-bold">
         <span className="text-blue-600">tiket</span>
         <span className="text-yellow-400">.</span>
         <span className="text-blue-600">com</span>
       </h1>
 
-      {/* MENU */}
       <div className="flex items-center gap-4">
         <button className="text-blue-600 font-medium hover:underline">
           Masuk

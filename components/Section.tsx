@@ -101,7 +101,6 @@ export default function Section({ title, type }: Props) {
     <section className="p-10 bg-gray-100 relative">
       <h2 className="text-2xl font-bold mb-6">{title}</h2>
 
-      {/* LEFT BUTTON */}
       <button
         onClick={() => scroll("left")}
         className="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-white shadow p-3 rounded-full hover:bg-gray-200"
@@ -109,7 +108,6 @@ export default function Section({ title, type }: Props) {
         ◀
       </button>
 
-      {/* RIGHT BUTTON */}
       <button
         onClick={() => scroll("right")}
         className="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-white shadow p-3 rounded-full hover:bg-gray-200"
@@ -117,7 +115,6 @@ export default function Section({ title, type }: Props) {
         ▶
       </button>
 
-      {/* SCROLL AREA */}
       <div
         ref={scrollRef}
         className="flex gap-4 overflow-x-auto scroll-smooth pb-2"
